@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08090b">
+<title>IRAN CHANGE | ایران چنج</title>
+<style>
+:root{
+  --bg:#08090b;
+  --card:#15171b;
+  --gold:#d8b875;
+  --muted:#98999e;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#f7f5ef;
+  font-family:Tahoma,Arial,sans-serif;
+}
+.app{max-width:520px;margin:auto;padding:22px 18px 105px}
+header{display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:23px;font-weight:bold;color:var(--gold)}
+.sub{font-size:10px;letter-spacing:3px;color:#aaa}
+.circle{
+  border:1px solid #51452d;
+  background:#181714;
+  color:var(--gold);
+  border-radius:50%;
+  width:43px;height:43px;font-size:20px;
+}
+.hero{
+  margin-top:32px;padding:27px 22px;
+  border:1px solid #57492e;
+  border-radius:23px;
+  background:linear-gradient(140deg,#252014,#111214 65%);
+  box-shadow:0 14px 45px #0009;
+}
+.eyebrow{color:var(--gold);font-size:12px}
+h1{font-size:27px;margin:14px 0}
+.hero p{color:#bcb7ad;font-size:13px;line-height:2}
+.gold-btn{
+  background:linear-gradient(120deg,#a77a37,#f3d89a,#b88a46);
+  color:#16120a;border:0;border-radius:13px;
+  padding:14px 18px;font-weight:bold;font-size:14px;
+  cursor:pointer;
+}
+.section{display:flex;justify-content:space-between;align-items:center;margin:30px 0 16px}
+.section h2{font-size:17px;margin:0}
+.section span{font-size:12px;color:var(--gold)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{
+  background:linear-gradient(145deg,#1c1e22,#101114);
+  border:1px solid #35312a;border-radius:19px;
+  padding:20px 14px;min-height:145px;
+  text-align:right;color:white;cursor:pointer;
+}
+.tile .symbol{font-size:27px;color:var(--gold)}
+.tile strong{display:block;margin:15px 0 7px;font-size:15px}
+.tile small{color:var(--muted);font-size:11px}
+.market{
+  background:var(--card);border:1px solid #302b22;
+  border-radius:16px;padding:17px;margin-bottom:10px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.market small{color:var(--muted)}
+.market b{color:var(--gold)}
+nav{
+  position:fixed;bottom:0;left:0;right:0;
+  background:#101114;border-top:1px solid #393126;
+  display:flex;justify-content:space-around;
+  padding:15px 4px 20px;z-index:5;
+}
+nav button{
+  background:none;border:0;color:#a7a4a0;
+  font-size:12px;cursor:pointer;
+}
+nav button.active{color:var(--gold)}
+.notice{
+  margin-top:20px;color:#9c978d;font-size:11px;
+  line-height:1.9;text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+ <div>
+  <div class="brand">ایران چنج</div>
+  <div class="sub">IRAN CHANGE</div>
+ </div>
+ <button class="circle" onclick="showMessage('اعلان‌ها')">♧</button>
+</header>
+
+<section class="hero">
+ <div class="eyebrow">PREMIUM EXCHANGE PLATFORM</div>
+ <h1>تجربه‌ای متفاوت از تبادل ارز</h1>
+ <p>بازاری هوشمند برای ثبت درخواست، جست‌وجوی حواله و مدیریت توافق‌های ارزی.</p>
+ <button class="gold-btn" onclick="showMessage('ثبت درخواست جدید')">
+  + ایجاد درخواست جدید
+ </button>
+</section>
+
+<div class="section">
+ <h2>خدمات ایران چنج</h2><span>دسترسی سریع</span>
+</div>
+<div class="grid">
+ <button class="tile" onclick="showMessage('خرید ارز')">
+  <span class="symbol">↙</span>
+  <strong>خرید ارز</strong><small>ثبت درخواست خرید</small>
+ </button>
+ <button class="tile" onclick="showMessage('فروش ارز')">
+  <span class="symbol">↗</span>
+  <strong>فروش ارز</strong><small>ثبت درخواست فروش</small>
+ </button>
+ <button class="tile" onclick="showMessage('بازار حواله‌ها')">
+  <span class="symbol">⌕</span>
+  <strong>بازار حواله‌ها</strong><small>جست‌وجوی درخواست‌ها</small>
+ </button>
+ <button class="tile" onclick="showMessage('توافق‌های من')">
+  <span class="symbol">◇</span>
+  <strong>توافق‌های من</strong><small>پیگیری معاملات</small>
+ </button>
+</div>
+
+<div class="section">
+ <h2>بازار ارز</h2><span>نمایش آزمایشی</span>
+</div>
+<div class="market"><div>🇪🇺 یورو <small>EUR</small></div><b>اتصال به نرخ واقعی در آینده</b></div>
+<div class="market"><div>🇺🇸 دلار <small>USD</small></div><b>اتصال به نرخ واقعی در آینده</b></div>
+
+<p class="notice">نسخه آزمایشی رابط کاربری — هنوز به اطلاعات واقعی کاربران و معاملات متصل نیست.</p>
+</div>
+
+<nav>
+ <button class="active" onclick="showMessage('خانه')">⌂ خانه</button>
+ <button onclick="showMessage('جست‌وجو')">⌕ جست‌وجو</button>
+ <button onclick="showMessage('درخواست‌های من')">▤ درخواست‌ها</button>
+ <button onclick="showMessage('پروفایل')">♙ پروفایل</button>
+</nav>
+
+<script>
+function showMessage(section){
+  if(section==='خانه')return;
+  alert('بخش «'+section+'» در مراحل بعدی فعال می‌شود.');
+}
+</script>
+</body>
+</html>
